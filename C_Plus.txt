@@ -1,0 +1,16 @@
+//plus program
+#include<stdio.h>
+
+int main()
+{
+	int n1, n2;
+
+	printf("number1:");
+	scanf("%d", &n1);
+	printf("number2:");
+	scanf("%d", &n2);
+
+	printf("n1 + n2: %d\n", n1 + n2);
+
+	return 0;
+}
