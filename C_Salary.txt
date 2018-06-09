@@ -1,0 +1,16 @@
+#include<stdio.h>
+#define YEAR 12
+
+int main()
+{
+	int m, y;
+
+	printf("salary(\):");
+	scanf("%d", &m);
+
+	y = m * YEAR;
+
+	printf("year salary(\):%d\n", y);
+
+	return 0;
+}
