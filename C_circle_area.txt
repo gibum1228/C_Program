@@ -1,0 +1,15 @@
+#include<stdio.h>
+#define PI 3.14
+
+int main() {
+	double r, v;
+
+	printf("radius:");
+	scanf("%lf", &r);
+
+	v = r * r * PI;
+
+	printf("the area of a circle: %f\n", v);
+
+	return 0;
+}
