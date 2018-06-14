@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+#define M 100
+
+int main()
+{
+	int cm;
+
+	printf("CM input:");
+	scanf("%d", &cm);
+
+	printf("%dcm is %dm %dcm\n", cm, cm / M, cm%M);
+
+	return 0;
+}
