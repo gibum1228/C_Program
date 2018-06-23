@@ -1,0 +1,15 @@
+
+#include<stdio.h>
+
+int main() {
+	int a, b, result;
+
+	printf("two number input:");
+	scanf("%d %d", &a, &b);
+
+	result = (a > b) ? a : b;
+
+	printf("%d and %d to MAX result %d\n", a, b, result);
+
+	return 0;
+}
