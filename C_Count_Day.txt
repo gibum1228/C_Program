@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int main() {
+	int y, m, d;
+
+	printf("Year Input:");
+	scanf("%d", &y);
+	printf("Month Input:");
+	scanf("%d", &m);
+
+	switch (m) {
+	case 2:
+		if ((y % 4 == 0 && y % 100 != 0) || y % 400 == 0)
+			d = 29;
+		d = 28;
+		break;
+	case 4:
+	case 6:
+	case 9:
+	case 11:
+		d = 30;
+		break;
+	default:
+		d = 31;
+	}
+
+	printf("%dMonth is %dday.\n", m, d);
+
+	return 0;
+}
