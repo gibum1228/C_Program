@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main() {
+	int x, i, result = 1;
+
+	printf("Number Input:");
+	scanf("%d", &x);
+
+	for (i = 1; i <= x; i++) {
+		result *= i;
+	}
+
+	printf("Result: %d\n", result);
+
+	return 0;
+
+}
