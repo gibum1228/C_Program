@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main() {
+	int x, y, i, result = 1;
+
+	printf("Number Input:");
+	scanf("%d", &x);
+	printf("Jisu Input:");
+	scanf("%d", &y);
+
+	for (i = 0; i < y; i++) {
+		result *= x;
+	}
+
+	printf("result:%d\n", result);
+
+	return 0;
+}
