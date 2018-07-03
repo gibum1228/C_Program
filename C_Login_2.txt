@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+#define LIMIT 3
+#define SUPER_ID 1357
+#define SUPER_PASS 4082
+
+int main() {
+	int i, p, n;
+
+	for (n = 0; n < LIMIT; n++) {
+		printf("ID:____\b\b\b\b");
+		scanf("%d", &i);
+		printf("PASSWORD:____\b\b\b\b");
+		scanf("%d", &p);
+
+		if (i == SUPER_ID && p == SUPER_PASS) {
+			printf("LOGIN\n");
+			return 0;
+			}
+		}
+	
+	printf("FAIL\n");
+	
+	return 1;
+	}
