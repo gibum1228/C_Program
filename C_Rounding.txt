@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+
+int main() {
+	double x, result;
+
+	printf("Number Input:");
+	scanf("%lf", &x);
+
+	result = floor(x + 0.5);
+
+	printf("Result: %g\n", result);
+
+	return 0;
+}
