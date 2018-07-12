@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main() {
+	int x, i;
+
+	printf("ex) -1 => exit\n");
+
+	while (1) {
+		printf("Length Input:");
+		scanf("%d", &x);
+
+		if (x < 0) {
+			break;
+		}
+
+		for (i = 0; i < x; i++) {
+			printf("*");
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
