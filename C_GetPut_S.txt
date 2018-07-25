@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main()
+{
+	char name[100], address[100];
+
+	printf("Name Input:"); gets(name);
+	printf("Address Input:"); gets(address);
+
+	puts(name); puts(address);
+
+	return 0;
+}
