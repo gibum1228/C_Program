@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+#define SIZE 3
+
+struct students {
+	char name[20];
+	double grade;
+	int number;
+};
+
+int main() {
+	struct students list[SIZE];
+	int i;
+
+	for (i = 0; i < SIZE; i++) {
+		printf("Number Input:");
+		scanf("%d", &list[i].number);
+		printf("Name Input:");
+		scanf("%s", list[i].name);
+		printf("Grade Input:");
+		scanf("%lf", &list[i].grade);
+	}
+
+	for (i = 0; i < SIZE; i++) {
+		printf("Number:%d, Name:%s, Grade:%f\n", list[i].number, list[i].name, list[i].grade);
+	}
+
+	return 0;
+}
