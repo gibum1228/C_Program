@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+struct student{
+	int number;
+	char name[20];
+	double grade;
+};
+
+int main() {
+	struct student s = { 20180001, "Hong", 4.3 };
+	struct student *p = &s;
+
+	printf("Number: %d, Name: %s, Grade: %g\n", s.number, s.name, s.grade);
+	printf("Number: %d, Name: %s, Grade: %g\n", (*p).number, (*p).name, (*p).grade);
+	printf("Number: %d, Name: %s, Grade: %g\n", p->number, p->name, p->grade);
+
+	return 0;
+}
